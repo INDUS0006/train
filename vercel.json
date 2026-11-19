@@ -4,10 +4,6 @@
     {
       "src": "backend/config/wsgi.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "frontend/build/web/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -16,12 +12,11 @@
       "dest": "backend/config/wsgi.py"
     },
     {
-      "src": "/(.*)",
-      "dest": "frontend/build/web/$1"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/build/web/index.html"
+      "dest": "/index.html"
     }
   ]
 }
