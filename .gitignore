@@ -7,6 +7,9 @@ backend/*/*/*/__pycache__/
 backend/*.pyc
 backend/*.pyo
 backend/.env
+api/__pycache__/
+__pycache__/
+*.pyc
 
 # Flutter
 frontend/.dart_tool/
